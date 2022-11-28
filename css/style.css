@@ -15,7 +15,7 @@ body {
     font-family: baskerville-urw, serif;
 }
 
-section, header, footer {
+section, header {
     width: 80%;
     max-width: 600px; 
     margin: auto; 
@@ -60,6 +60,10 @@ blockquote cite {
     color: #333333;
 }
 
+.leader {
+    font-weight: bolder;
+}
+
 /*- Styling Links --*/
 a {
     color: rgb(116, 58, 0);
@@ -76,12 +80,11 @@ a:hover {
 /*-- Navigation --*/
 
 nav {
-    position: fixed;
     top: 0;
     left: 0;
     margin: 0;
     width: 100%;
-    background-color: rgba(90, 45, 0, 0.792);
+    background-color: #44210d61;
     padding: 1.5rem 0;
     font-size: 0.75;
 }
@@ -105,9 +108,22 @@ nav a {
 
 nav a:hover {
     border-bottom: none;
-    color: rgb(62, 31, 1);
+    color: #84430A;
     transition: all 0.3s ease-in-out;
     
+}
+
+.gridimage {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.dark {
+    background: #ba9677;
+    padding: 3rem;
+    margin-top: -3.5rem;
+
 }
 
 /*-- Styling table --*/
@@ -143,27 +159,93 @@ th, td{
 }
 
 table, td {
-    background: rgb(255, 227, 199);
-    border: 2px solid rgb(255, 211, 168) ;
+    background:rgb(252, 237, 222);
+    border: 2px solid rgb(72, 35, 0) ;
 }
 
 /*-- images --*/
+
+
+
 img {
     display: block;
     margin: 2rem 0 2rem 0;
     padding: 0;
     max-width: 100%;
-
-
 }
 
+.topimage {
+    margin: 0;
+}
+
+hr {
+    margin: 50px 0;
+    height: 2px;
+    background-color: rgb(90, 45, 0);
+    color: rgb(90, 45, 0);
+    border: 0;
+}
 
 /*-- styling in footer --*/
 
+
 footer {
+    background: #44210d61;
     text-align: center;
-    font-size: 0.8rem;
-    padding-bottom: 4rem;
-}
+    font-size: 0.75rem;
+    color: #f7f7f7;
+    padding: 4em 0 3em 0
+    }
+    
+    footer p {
+    width: 80%;
+    margin: auto;
+    }
+    
+    .connections{
+    position: relative;
+    margin: 0 auto;
+    }
+    .connections ul{
+    margin: 0;
+    padding: 0;
+    }
+    .connections li{
+    margin: 0 10px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    }
+    .connections a:link{
+    border-bottom: none;
+    }
+    .connections img,
+    .connections svg{
+    border: none;
+    }
+    .connections a:hover img,
+    .connections a:hover svg{
+    border-bottom: none;}
+    .connections svg {
+    margin: 1em auto;}
+    .connections a:hover svg path {
+    fill: #44210d61;
+    transition: all 0.2s ease-in-out;}
+    footer .connections a:hover svg path {
+    fill: #44210d61;
+    transition: all 0.2s ease-in-out;}
 
+    
+    @media ( max-width: 800px) {
+        body {
+            
+            margin: auto 0;
+            font-size: 110%
+        }
 
+            article {
+                width: 90%
+            }
+        }
+    
+        
